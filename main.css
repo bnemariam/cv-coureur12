@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+    align-self: center;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    height: 500px;
+}
+
+#area1 {
+    background-color: aqua;
+}
+
+#area2 {
+    background-color: chocolate;
+}
+
+#area3 {
+    background-color: blue;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
