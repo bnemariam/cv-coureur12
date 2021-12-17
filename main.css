@@ -1,36 +1,182 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-    max-width: 50%;
-    max-height: 50%;
-    align-self: center;
+.panel {
+    float: none;
+    width: 100%;
 }
 
 .column {
     float: left;
-    width: 30%;
-    padding: 5px;
-    height: 500px;
+    width: 33.3%;
+    padding: 10px;
+    height: 100vh;
+    background-color: #99cc99;
 }
+
+/* ------------------------------------------------------ */
+/*                         AREA 1                         */
+/* ------------------------------------------------------ */
 
 #area1 {
-    background-color: aqua;
+    padding: 2%;
 }
+
+#photo {
+    height: 80%;
+    width: auto;
+    align-self: center;
+    background-color: brown;
+}
+
+#image {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+
+#titre {
+    background-color: #99cc99;
+    margin-top: 2%;
+    font-size: 110%;
+
+}
+
+
+/* ------------------------------------------------------ */
+/*                         AREA 2                         */
+/* ------------------------------------------------------ */
 
 #area2 {
-    background-color: chocolate;
+    padding: 2%;
 }
+
+#quote {
+    background-color: #385e47;
+    color: whitesmoke;
+    padding: 1%;
+    font-size:100%;
+}
+
+#presentation {
+    background-color: #405e44;
+    color: whitesmoke;
+    padding: 3%;
+    margin-top: 13%;
+    width: 100%;
+    font-size: 100%;
+}
+
+#signature {
+    background-color: whitesmoke;
+    margin: 5%;
+    margin-top: 13%;
+    width: 90%;
+    height: 15%;
+}
+
+#signed {
+    height: 50%;
+    width: 50%;
+}
+
+/* ------------------------------------------------------ */
+/*               AREA 3                                   */
+/*------------------------------------------------------- */
 
 #area3 {
-    background-color: blue;
+    padding: 1.5%;
+}
+
+#info {
+    background-color: #99cc99;
+    height: 18%;
+}
+
+#info p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    padding: 3%;
+}
+
+#moreinfo {
+    background-color: #99cc99;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 100%;
+    padding-top: 18%;
+    padding-bottom: 18%;
+}
+
+.carre {
+    background-color: #094d1e;
+    height: 55%;
+    width: 47%;
+    margin: 1%;
+}
+
+#carre1 {
+}
+
+#carre2 {
+}
+
+#carre3 {
+}
+
+#carre4 {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .column {
         width: 100%;
+    }
+
+    #moreinfo {
+        background-color: #99cc99;
+        display: flex;
+        flex-wrap: wrap;
+        height: 80%;
+        width: 100%;
+        padding-top: 30%;
+        padding-bottom: 18%;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    #info {
+        background-color: #99cc99;
+        height: 20%;
+        margin-bottom: 2%;
+    }
+
+    #info p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 80%;
+        padding: 3%;
+    }
+
+    #moreinfo {
+        background-color: #99cc99;
+        display: flex;
+        flex-wrap: wrap;
+        height: 80%;
+        width: 100%;
+        padding-top: 35%;
+        padding-bottom: 18%;
+    }
+    
+    .carre {
+        background-color: #094d1e;
+        height: 55%;
+        width: 47%;
+        margin: 1%;
     }
 }
